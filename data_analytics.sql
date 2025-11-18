@@ -72,8 +72,5 @@ alter table emp drop primary key;
 -- add primary key and foreign key 
 alter table emp modify column emp_id smallint primary key auto_increment;
 alter table orders add constraint foreign key (emp_id) references emp(emp_id);
-use classicmodels;
-select*from customers;
-select count(*) from customers;
-select distinct state from customers;
-select count(distinct state) from customers; 
+
+ 
